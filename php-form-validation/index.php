@@ -6,6 +6,13 @@
         if ($username == "" || strlen($username) > 25 || strlen($username) < 5){
             echo "username is not valid";
         }
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "{$email}: A valid email"."<br>";
+        }
+        else {
+            echo "{$email}: Not a valid email"."<br>";
+        }
+
     }
 ?>
 

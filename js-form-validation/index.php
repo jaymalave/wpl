@@ -10,6 +10,7 @@
 <body>
     <form action="action.php" onsubmit="return validateForm()" name="form1" method="POST">
      Name: <input name="fname" type="text">
+     Email: <input name="email" type="text">
      <input type = "submit" value="Submit">
     </form>
 </body>
