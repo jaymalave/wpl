@@ -12,6 +12,8 @@ function validateForm(){
       return emailPattern.test(email);
    }
 
+   // Validation for Indian Phone Numbers: ^[6-9]\d{9}$
+
    if(!validateEmail(y)){
        alert("Email is invalid");
       return false;
